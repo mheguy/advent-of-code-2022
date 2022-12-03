@@ -8,8 +8,12 @@ def get_elves() -> list[int]:
 
     elves = []
     for elf_text in elves_as_text:
+        if not elf_text:
+            continue
         calorie_values_as_text = elf_text.split("\n")
-        elves.append(sum(int(calorie_value_str) for calorie_value_str in calorie_values_as_text))
+        elves.append(
+            sum(int(calorie_value_str) for calorie_value_str in calorie_values_as_text)
+        )
     return elves
 
 
