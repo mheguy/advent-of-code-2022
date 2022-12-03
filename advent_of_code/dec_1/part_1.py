@@ -2,7 +2,7 @@ from shared_lib.resources import INPUT_FOLDER
 
 
 def get_elves() -> list[int]:
-    input_file = INPUT_FOLDER / "dec_1" / "input.txt"
+    input_file = INPUT_FOLDER / "input"
     input_text = input_file.read_text("UTF-8")
     elves_as_text = input_text.split("\n\n")
 
