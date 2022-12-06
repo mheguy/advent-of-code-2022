@@ -17,16 +17,6 @@ def main() -> None:
     priority_map = get_priority_map()
     lines = get_input_file_lines()
 
-    # test_input = [
-    #     "vJrwpWtwJgWrhcsFMMfFFhFp",
-    #     "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
-    #     "PmmdzqPrVvPwwTWBwg",
-    #     "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn",
-    #     "ttgJtRGJQctTZtZT",
-    #     "CrZsJsPPZsGzwwsLwLmpwMDw",
-    # ]
-    # lines = test_input
-
     total = 0
     for line_num, line in enumerate(lines, start=1):
         midpoint = len(line) // 2

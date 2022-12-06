@@ -8,7 +8,7 @@ def create_groups_of_n(list_to_split: list[str], group_size: int) -> list[list[s
     index = 0
     groups = []
     for _ in range(num_groups):
-        groups.append(list_to_split[index:index + 3])
+        groups.append(list_to_split[index : index + 3])
         index += group_size
 
     return groups
@@ -32,16 +32,6 @@ def find_badge(group: list[str]) -> str:
 def main() -> None:
     priority_map = get_priority_map()
     lines = get_input_file_lines()
-
-    # test_input = [
-    #     "vJrwpWtwJgWrhcsFMMfFFhFp",
-    #     "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
-    #     "PmmdzqPrVvPwwTWBwg",
-    #     "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn",
-    #     "ttgJtRGJQctTZtZT",
-    #     "CrZsJsPPZsGzwwsLwLmpwMDw",
-    # ]
-    # lines = test_input
 
     groups_of_3 = create_groups_of_n(lines, 3)
 
