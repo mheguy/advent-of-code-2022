@@ -9,7 +9,7 @@ def main(cypher_length):
 
     for pos, char in enumerate(input_text, start=1):
         cypher.append(char)
-        if len(cypher) == cypher_length and len(set(cypher)) == cypher_length:
+        if len(set(cypher)) == cypher_length:
             print(pos)
             break
 
