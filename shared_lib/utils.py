@@ -1,16 +1,10 @@
-from typing import Iterable
-
 from shared_lib.resources import INPUT_FOLDER
 
 
-def get_input_file_lines() -> Iterable[str]:
+def get_input_file_lines() -> list[str]:
     input_text = get_input_file_text()
     lines = input_text.split("\n")
-    for line in lines:
-        if line:
-            yield line
-        else:
-            return
+    return [line for line in lines if line]
 
 
 def get_input_file_text() -> str:

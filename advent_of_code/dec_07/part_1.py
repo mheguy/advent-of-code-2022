@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
-from typing import Iterable
 
 from shared_lib.utils import get_input_file_lines
 
@@ -78,7 +77,7 @@ class Terminal:
                 self.cwd.add_file(File(result[2], int(result[1])))
 
 
-def parse_text_input(text_lines: Iterable[str]) -> list[CommandBlock]:
+def parse_text_input(text_lines: list[str]) -> list[CommandBlock]:
     commands_and_outputs = []
     new_item = []
     for line in text_lines:

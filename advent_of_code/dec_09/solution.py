@@ -1,11 +1,14 @@
 from __future__ import annotations
 
-from collections import namedtuple
 from dataclasses import dataclass, field
+from typing import NamedTuple
 
 from shared_lib.utils import get_input_file_lines
 
-Coordinate = namedtuple("Coordinate", "x,y")
+
+class Coordinate(NamedTuple):
+    x: int
+    y: int
 
 
 @dataclass
@@ -94,7 +97,9 @@ def main(num_knots: int):
         direction, dist_str = line.split()
         knot.move_head(directions[direction], int(dist_str))
 
-    print(f"For {num_knots}, the last piece visited {len(knot.tail.location_tracker)} locations.")
+    print(
+        f"For {num_knots}, the last piece visited {len(knot.tail.location_tracker)} locations."
+    )
 
 
 if __name__ == "__main__":
