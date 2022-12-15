@@ -3,8 +3,8 @@ from __future__ import annotations
 import math
 from dataclasses import dataclass, field
 
-from advent_of_code.dec_08.part_1 import transpose_tree_grid, get_list_from_tree_grid
-from shared_lib.utils import get_input_file_lines
+from advent_of_code.dec_08.part_1 import get_list_from_tree_grid, transpose_tree_grid
+from advent_of_code.shared_lib.utils import get_input_file_lines
 
 TreeGrid: list[list[Tree]]
 

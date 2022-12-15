@@ -1,4 +1,4 @@
-from shared_lib.resources import INPUT_FOLDER
+from advent_of_code.shared_lib.resources import INPUT_FOLDER
 
 
 def get_input_file_lines() -> list[str]:
@@ -8,5 +8,5 @@ def get_input_file_lines() -> list[str]:
 
 
 def get_input_file_text() -> str:
-    input_file = INPUT_FOLDER / "input"
+    input_file = INPUT_FOLDER / "input.txt"
     return input_file.read_text("UTF-8")

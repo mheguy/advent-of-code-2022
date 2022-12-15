@@ -1,4 +1,4 @@
-from shared_lib.resources import INPUT_FOLDER
+from advent_of_code.shared_lib.resources import INPUT_FOLDER
 
 
 def get_elves() -> list[int]:
@@ -17,6 +17,17 @@ def get_elves() -> list[int]:
     return elves
 
 
+def get_sum_of_top_n(nums: list[int], n: int) -> int:
+    total = 0
+    for _ in range(n):
+        current_max = max(nums)
+        total += current_max
+        nums.remove(current_max)
+
+    return total
+
+
 if __name__ == "__main__":
     elven_calorie_counts = get_elves()
     print(max(elven_calorie_counts))
+    print(get_sum_of_top_n(elven_calorie_counts, 3))

@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum
 
-from shared_lib.utils import get_input_file_lines
+from advent_of_code.shared_lib.utils import get_input_file_lines
 
 TreeGrid: list[list[Tree]]
 

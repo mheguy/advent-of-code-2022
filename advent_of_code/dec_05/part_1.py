@@ -1,6 +1,6 @@
 import re
 
-from shared_lib.utils import get_input_file_text
+from advent_of_code.shared_lib.utils import get_input_file_text
 
 CrateStack = list[str]
 

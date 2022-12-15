@@ -1,8 +1,9 @@
 from enum import IntEnum
 
-from advent_of_code.dec_2.part_1 import Choice, defeat_map
+from advent_of_code.dec_2.part_1 import Choice
 from advent_of_code.dec_2.part_1 import decryption_map as p1_decryption_map
-from shared_lib.utils import get_input_file_lines
+from advent_of_code.dec_2.part_1 import defeat_map
+from advent_of_code.shared_lib.utils import get_input_file_lines
 
 
 class Outcome(IntEnum):

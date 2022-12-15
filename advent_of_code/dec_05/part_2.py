@@ -1,7 +1,7 @@
 import re
 
 from advent_of_code.dec_05.part_1 import initialize_columns
-from shared_lib.utils import get_input_file_text
+from advent_of_code.shared_lib.utils import get_input_file_text
 
 CrateStack = list[str]
 
