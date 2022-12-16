@@ -1,10 +1,15 @@
 from enum import Enum
 from itertools import pairwise
+from typing import NamedTuple
 
-from advent_of_code.shared_lib.classes import Position
 from advent_of_code.shared_lib.utils import get_input_file_lines
 
-Grid = dict[Position, "Material"]
+Grid = dict["Position", "Material"]
+
+
+class Position(NamedTuple):
+    x: int
+    y: int
 
 
 class Material(Enum):

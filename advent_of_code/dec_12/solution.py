@@ -3,12 +3,16 @@ from __future__ import annotations
 import math
 from collections import deque
 from dataclasses import dataclass, field
-from typing import Generator
+from typing import Generator, NamedTuple
 
-from advent_of_code.shared_lib.classes import Position
 from advent_of_code.shared_lib.utils import get_input_file_lines
 
 CARDINAL_MOVEMENTS = ((1, 0), (-1, 0), (0, 1), (0, -1))
+
+
+class Position(NamedTuple):
+    x: int
+    y: int
 
 
 @dataclass
