@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Any, Callable
 
-from utils import get_input_file_lines
+from advent_of_code.shared_lib.utils import get_input_file_lines
 
 PACKET_PAIR = 0
 

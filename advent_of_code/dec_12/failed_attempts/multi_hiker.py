@@ -8,7 +8,7 @@ from copy import deepcopy
 from dataclasses import dataclass
 from typing import NamedTuple
 
-from utils import get_input_file_lines
+from advent_of_code.shared_lib.utils import get_input_file_lines
 
 logging.basicConfig(
     filename="example.log", encoding="utf-8", level=logging.DEBUG, filemode="w"
