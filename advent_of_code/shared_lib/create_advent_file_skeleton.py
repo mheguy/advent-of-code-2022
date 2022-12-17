@@ -10,12 +10,15 @@ for i in range(5, 25):
     for part in range(2):
         part_file = day_folder / f"part_{part + 1}.py"
         part_file.write_text(
-            """def main():
+            """from advent_of_code.shared_lib.utils import get_input_file_lines
+
+def main(input_filename: str):
+    lines = get_input_file_lines(input_filename)
     ...
 
 
 if __name__ == "__main__":
-    main()
+    main("dec_XX.txt")
 """
         )
         # part_file.touch(exist_ok=True)
